@@ -50,5 +50,5 @@ import javax.ws.rs.*;
     @AuthorizationScope(scope = "read:pets", description = "read your pets")
   })
 }, tags = "pet")
-public class PetResource {
+public class PetResource extends PetResourceBase {
 }
