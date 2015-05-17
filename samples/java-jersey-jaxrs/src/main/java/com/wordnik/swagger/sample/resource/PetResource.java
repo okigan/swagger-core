@@ -51,4 +51,8 @@ import javax.ws.rs.*;
   })
 }, tags = "pet")
 public class PetResource extends PetResourceBase {
+  @Override
+  public Response getPetById(@ApiParam(value = "ID of pet to return") Long petId) throws NotFoundException {
+    return super.getPetById(petId);
+  }
 }
