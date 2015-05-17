@@ -35,7 +35,7 @@ import java.io.InputStream;
 import java.util.List;
 
 @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
-public class PetResourceBase {
+public abstract class PetResourceBase {
   private Logger LOGGER = LoggerFactory.getLogger(PetResourceBase.class);
   static PetData petData = new PetData();
   static JavaRestResourceUtil ru = new JavaRestResourceUtil();
